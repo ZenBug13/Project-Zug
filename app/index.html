@@ -13,13 +13,14 @@
   </head>
   <body  ng-controller="indexController">
 
+  <div clas="col-md-12">
     <div class="jumbotron">
       <div class="header-content">
         <div class="header-content-inner">
-          <h1> Ben Zug </h1>
         </div>
       </div>
     </div>
+  </div>
 
     <section class="background-1">
       <div class="container">
@@ -33,7 +34,7 @@
       <div class="container">
           <div ng-repeat="exp in experience">
               <div class="col-lg-4">
-              <img class="logo" src="{{exp.image}}"/>
+              <center><img class="logo" src="{{exp.image}}"/></center>
           </div>
         </div>
       </div>
@@ -41,8 +42,8 @@
     <section class="background-1">
       <div class="container">
         <div class="col-md-12">
-          <div class="bioheader mar-top-10">GIT</div>
-          <div class="biotext">Write stuff about yourself to impress people.</div>
+          <div class="bioheader mar-top-10">GITHUB</div>
+          <center><a target="_blank" href="https://github.com/ZenBug13"><img class="gitlogo" src="assets/img/GitHub-Mark.png"/></center>
         </div>
       </div>
     </section>
