@@ -1,0 +1,49 @@
+.jumbotron{
+  background: url("img/beaverstadium.jpg");
+  height:500px;
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.header-content .header-content-inner h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 300px;
+}
+
+h1 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.bioheader{
+  font-size: 36px;
+  text-align: center;
+}
+
+.biotext{
+  font-size: 24px;
+}
+
+.background-1 {
+    background-color: #4b4b4b;
+    color: #fff;
+}
+.background-2 {
+    background-color: #fff;
+    color: #4b4b4b;
+}
+
+.logo {
+  height: 250px;
+  width: 250px;
+  object-fit: scale-down;
+}
+
+.mar-top-5{ margin-top: 5px;}
+.mar-bot-5{ margin-bottom: -bot: 5px;}
+.mar-top-10{ margin-top: 10px;}
+.mar-bot-10{ margin-bottom: 10px;}
+.mar-top-10{ margin-top: 20px;}
+.mar-bot-10{ margin-bottom: 20px;}

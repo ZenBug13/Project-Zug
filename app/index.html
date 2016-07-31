@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ben Zug</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  </head>
+  <body  ng-controller="indexController">
+
+    <div class="jumbotron">
+      <div class="header-content">
+        <div class="header-content-inner">
+          <h1> Ben Zug </h1>
+        </div>
+      </div>
+    </div>
+
+    <section class="background-1">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="bioheader mar-top-10">BIO</div>
+          <div class="biotext mar-bot-10">Write stuff about yourself to impress people.</div>
+        </div>
+      </div>
+    </section>
+    <section class="background-2 mar-top-20 mar-bot-20">
+      <div class="container">
+          <div ng-repeat="exp in experience">
+              <div class="col-lg-4">
+              <img class="logo" src="{{exp.image}}"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="background-1">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="bioheader mar-top-10">GIT</div>
+          <div class="biotext">Write stuff about yourself to impress people.</div>
+        </div>
+      </div>
+    </section>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="assets/app.js"></script>
+    <script src="components/home/home.html"></script>
+    <script src="components/home/home.js"></script>
+    <script src="components/home/home.controller.js"></script>
+  </body>
+</html>
