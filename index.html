@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ben Zug</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app/assets/app.css">
+	  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  </head>
+  <body  ng-controller="indexController">
+    <div ui-view></div>
+
+  <div clas="col-md-12">
+    <div class="jumbotron">
+      <div class="header-content">
+        <div class="header-content-inner">
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section class="background-1 mar-top--30">
+      <div class="container">
+        <div class="col-md-12 mar-top-20 mar-bot-50">
+          <div class="bioheader mar-top-10">BIO</div>
+          <div class="biotext mar-bot-10">{{bio}}</div>
+        </div>
+      </div>
+    </section>
+    <section class="background-2 mar-top-50 mar-bot-50">
+      <div class="container">
+        <div ng-repeat="exp in experience">
+          <div class="col-lg-4">
+            <center><img class="logo" src="{{exp.image}}"/></center>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="background-1">
+      <div class="container">
+        <div class="col-md-12 mar-top-50 mar-bot-50">
+          <div class="bioheader mar-top-10">GITHUB</div>
+          <center><a target="_blank" href="https://github.com/ZenBug13"><img class="gitlogo" src="app/assets/img/GitHub-Mark.png"/></center>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="app/assets/app.js"></script>
+    <script src="app/components/home/home.html"></script>
+    <script src="app/components/home/home.js"></script>
+    <script src="app/components/home/home.controller.js"></script>
+  </body>
+</html>
