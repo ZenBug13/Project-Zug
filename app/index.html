@@ -31,60 +31,27 @@
     </section>
     <section class="background-2 mar-top-50 mar-bot-50">
       <div class="container">
-        <div class="col-lg-4" ng-click="isClickedPenna = !isClickedPenna">
-          <center><img class="logo" src="{{experience[0].image}}"/></center>
+        <div ng-repeat="exp in experience">
+          <div class="col-lg-4">
+            <center><img class="logo" src="{{exp.image}}"/></center>
+          </div>
         </div>
-        <div class="col-lg-4" ng-click="isClickedBNY = !isClickedBNY">
-          <center><img class="logo" src="{{experience[1].image}}"/></center>
-        </div>
-        <div class="col-lg-4" ng-click="isClickedPSU = !isClickedPSU">
-          <center><img class="logo" src="{{experience[2].image}}"/></center>
-        </div>
-      </div>
-    </section>
-    <section class="background-2 mar-top-50 mar-bot-50">
-      <div class="container" ng-show="isClickedPenna">
-        0Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nunc felis, aliquam et posuere quis, ullamcorper ac metus.
-      </div>
-      <div class="container" ng-show="isClickedBNY">
-        1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nunc felis, aliquam et posuere quis, ullamcorper ac metus.
-      </div>
-      <div class="container" ng-show="isClickedPSU">
-        2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nunc felis, aliquam et posuere quis, ullamcorper ac metus.
       </div>
     </section>
     <section class="background-1">
       <div class="container">
         <div class="col-md-12 mar-top-50 mar-bot-50">
           <div class="bioheader mar-top-10">GITHUB</div>
-          <center><a target="_blank" href="https://github.com/ZenBug13"><img class="gitlogo" src="app/assets/img/Octocat.png"/></a></center>
+          <center><a target="_blank" href="https://github.com/ZenBug13"><img class="gitlogo" src="app/assets/img/GitHub-Mark.png"/></center>
         </div>
       </div>
     </section>
-
-    <footer class="background-3">
-      <div class="container">
-        <div class="col-md-6 profile-pic">
-          <img class="profile-pic" src="app/assets/img/BenZug.png"/>
-        </div>
-        <div class="col-md-6 bioheader">
-          Ben Zug
-        </div>
-      <div>
-      <div class="container">
-        <div class="col-md-6">
-          <a target="_blank" href="https://github.com/ZenBug13"><img class="" src="app/assets/img/GitHub-Mark-Light.png"/></a>
-        </div>
-        <div class="col-md-6">
-          <a target="_blank" href="https://github.com/ZenBug13"><img class="" src="app/assets/img/in-White.png"/></a>
-        </div>
-      </div>
-    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/angular-ui/ui-router/0.2.18/release/angular-ui-router.min.js"></script>
     <script src="app/assets/app.js"></script>
     <script src="app/components/home/home.html"></script>
     <script src="app/components/home/home.js"></script>
