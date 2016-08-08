@@ -29,6 +29,11 @@ h1 {
   font-size: 24px;
 }
 
+.emailtext{
+  font-size: 24px;
+  text-align: center;
+}
+
 .background-1 {
     background-color: #4b4b4b;
     color: #fff;
@@ -49,16 +54,15 @@ h1 {
 }
 
 .gitlogo{
-  height: 250px;
-  width: 250px;
+  height: 50px;
+  width: 50px;
   object-fit: scale-down;
 }
 
-.profile-pic{
-  height: 250px;
-  width: 250px;
+.profilepic{
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
-  object-fit: scale-down;
 }
 
 .mar-top--30{margin-top: -30px;}
@@ -68,5 +72,9 @@ h1 {
 .mar-bot-10{margin-bottom: 10px;}
 .mar-top-20{margin-top: 20px;}
 .mar-bot-20{margin-bottom: 20px;}
+.mar-top-30{margin-top: 30px;}
+.mar-bot-30{margin-bottom: 30px;}
+.mar-top-40{margin-top: 40px;}
+.mar-bot-40{margin-bottom: 40px;}
 .mar-top-50{margin-top: 50px;}
 .mar-bot-50{margin-bottom: 50px;}
