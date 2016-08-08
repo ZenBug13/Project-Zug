@@ -16,13 +16,14 @@
     <div class="jumbotron">
       <div class="header-content">
         <div class="header-content-inner">
+          <a ng-click="gotoAnchor()"><img class="downarrow" src="app/assets/img/downArrow.png"/></a>
         </div>
       </div>
     </div>
   </div>
 
     <section class="background-1 mar-top--30">
-      <div class="container">
+      <div id="anchor" class="anchor container">
         <div class="col-md-12 mar-top-20 mar-bot-50">
           <div class="bioheader mar-top-10">BIO</div>
           <div class="biotext mar-bot-10">{{bio}}</div>
@@ -31,13 +32,13 @@
     </section>
     <section class="background-2 mar-top-50 mar-bot-50">
       <div class="container">
-        <div class="col-lg-4" ng-click="isClickedPenna = !isClickedPenna">
+        <div class="col-lg-4" ng-click="showPenna()">
           <center><img class="logo" src="{{experience[0].image}}"/></center>
         </div>
-        <div class="col-lg-4" ng-click="isClickedBNY = !isClickedBNY">
+        <div class="col-lg-4" ng-click="showBNY()">
           <center><img class="logo" src="{{experience[1].image}}"/></center>
         </div>
-        <div class="col-lg-4" ng-click="isClickedPSU = !isClickedPSU">
+        <div class="col-lg-4" ng-click="showPSU()">
           <center><img class="logo" src="{{experience[2].image}}"/></center>
         </div>
       </div>

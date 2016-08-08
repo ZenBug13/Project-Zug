@@ -1,5 +1,5 @@
 angular.module('myApp', [])
-.controller("indexController", function($scope){
+.controller("indexController", function($scope, $location, $anchorScroll){
   $scope.plz="plz";
   $scope.experience = [
     {
@@ -21,4 +21,24 @@ angular.module('myApp', [])
   $scope.isClickedPenna = false;
   $scope.isClickedBNY = false;
   $scope.isClickedPSU = false;
+
+  $scope.showPenna = function(){
+    $scope.isClickedPenna = !$scope.isClickedPenna;
+    $scope.isClickedBNY = false;
+    $scope.isClickedPSU = false;
+  }
+  $scope.showBNY = function(){
+    $scope.isClickedPenna = false;
+    $scope.isClickedBNY = !$scope.isClickedBNY;
+    $scope.isClickedPSU = false;
+  }
+  $scope.showPSU = function(){
+    $scope.isClickedPenna = false;
+    $scope.isClickedBNY = false;
+    $scope.isClickedPSU = !$scope.isClickedPSU;
+  }
+  $scope.gotoAnchor = function() {
+    $location.hash('anchor');
+    $anchorScroll();
+  };
 });
