@@ -74,6 +74,9 @@ h1 {
   margin-left: -50px;
   margin-top: -50px;
 }
+ul.a {
+    list-style-type: circle;
+}
 
 .mar-top--30{margin-top: -30px;}
 .mar-top-5{margin-top: 5px;}
