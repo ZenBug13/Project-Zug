@@ -32,94 +32,92 @@
     </section>
     <section class="background-2 mar-top-50 mar-bot-50">
       <div class="container">
-        <div class="col-lg-4" ng-click="showPenna()">
+        <div class="col-lg-8" ng-show="isClickedPenna">
+          <div class="year">2015</div>
+          <div class="exptitle">IT Intern</div>
+          <ul class="a">
+            <li>Used Javascript to modify ticketing system</li>
+            <li>Traveled and installed computers and software for 500 employees</li>
+          </ul>
+          <div class="year">2014</div>
+          <div class="exptitle">Maintenance Worker</div>
+          <ul class="a">
+            <li>Landscaping for Mount Gretna Maintenance Shed</li>
+            <li>Inventory for Mount Gretna Maintenance Shed</li>
+          </ul>
+        </div>
+        <div class="col-lg-4" ng-click="showPenna()" ng-show="!isClickedPSU && !isClickedBNY">
           <center><img class="logo" src="{{experience[0].image}}"/></center>
         </div>
-        <div class="col-lg-4" ng-click="showBNY()">
+        <div class="col-lg-8" ng-show="isClickedBNY">
+          <div class="year">2016</div>
+          <div class="exptitle">Summer Associate Program</div>
+          <ul class="a">
+            <li>Client Technology Services Intern</li>
+            <li>Web Application Development</li>
+            <ul class="a">
+              <li>Front-End</li>
+              <ul class="a">
+                <li>AngularJS</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <li>Back-End</li>
+              <ul class="a">
+                <li>Spring</li>
+                <li>SQL</li>
+              </ul>
+            </ul>
+            <li>Innovation Center Sound Map</li>
+            <ul class="a">
+              <li>Raspberry PI</li>
+              <li>Arduino</li>
+              <li>Python</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="col-lg-4" ng-click="showBNY()" ng-show="!isClickedPSU && !isClickedPenna">
           <center><img class="logo" src="{{experience[1].image}}"/></center>
         </div>
-        <div class="col-lg-4" ng-click="showPSU()">
+        <div class="col-lg-8" ng-show="isClickedPSU">
+          <div class="year">2014-2018</div>
+          <div class="exptitle">Student</div>
+          <ul class="a">
+            <li>Courses</li>
+            <ul class="a">
+              <li>CMPSC</li>
+              <ul class="a">
+                <li>121 - Intro to C++</li>
+                <li>122 - Data Structure in C++</li>
+                <li>211 - Object Oriented programing C++</li>
+                <li>360 - Discrete Mathematics</li>
+                <li>311 - Systems Programing</li>
+                <li>465 - Algoritms</li>
+              </ul>
+              <li>COMPENG</li>
+              <ul class="a">
+                <li>270 - Digital Design</li>
+                <li>331 - Computer Organization and Design</li>
+              </ul>
+            </ul>
+            <li>Clubs</li>
+            <ul class="a">
+              <li>ACM - Association for Computing Machinery</li>
+              <li>AAD - Association for Application Development</li>
+            </ul>
+            <li>Events</li>
+            <ul class="a">
+              <li>Hack PSU</li>
+              <li>Code PSU</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="col-lg-4" ng-click="showPSU()" ng-show="!isClickedPenna && !isClickedBNY">
           <center><img class="logo" src="{{experience[2].image}}"/></center>
         </div>
       </div>
     </section>
-    <section class="background-2 mar-top-50 mar-bot-50">
-      <div class="container" ng-show="isClickedPenna">
-        <div class="year">2015</div>
-        <div class="exptitle">IT Intern</div>
-        <ul class="a">
-          <li>Used Javascript to modify ticketing system</li>
-          <li>Traveled and installed computers and software for 500 employees</li>
-        </ul>
-        <div class="year">2014</div>
-        <div class="exptitle">Maintenance Worker</div>
-        <ul class="a">
-          <li>Landscaping for Mount Gretna Maintenance Shed</li>
-          <li>Inventory for Mount Gretna Maintenance Shed</li>
-        </ul>
-      </div>
-      <div class="container" ng-show="isClickedBNY">
-        <div class="year">2016</div>
-        <div class="exptitle">Summer Associate Program</div>
-        <ul class="a">
-          <li>Client Technology Services Intern</li>
-          <li>Web Application Development</li>
-          <ul class="a">
-            <li>Front-End</li>
-            <ul class="a">
-              <li>AngularJS</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-            <li>Back-End</li>
-            <ul class="a">
-              <li>Spring</li>
-              <li>SQL</li>
-            </ul>
-          </ul>
-          <li>Innovation Center Sound Map</li>
-          <ul class="a">
-            <li>Raspberry PI</li>
-            <li>Arduino</li>
-            <li>Python</li>
-          </ul>
-        </ul>
-      </div>
-      <div class="container" ng-show="isClickedPSU">
-        <div class="year">2014-2018</div>
-        <div class="exptitle">Student</div>
-        <ul class="a">
-          <li>Courses</li>
-          <ul class="a">
-            <li>CMPSC</li>
-            <ul class="a">
-              <li>121</li>
-              <li>122</li>
-              <li>211</li>
-              <li>360</li>
-              <li>311</li>
-              <li>465</li>
-            </ul>
-            <li>COMPENG</li>
-            <ul class="a">
-              <li>270</li>
-              <li>331</li>
-            </ul>
-          </ul>
-          <li>Clubs</li>
-          <ul class="a">
-            <li>ACM - Association for Computing Machinery</li>
-            <li>AAD - Association for Application Development</li>
-          </ul>
-          <li>Events</li>
-          <ul class="a">
-            <li>Hack PSU</li>
-            <li>Code PSU</li>
-          </ul>
-        </ul>
-      </div>
-    </section>
-
+    
     <footer class="background-3">
       <div class="container">
         <div class="col-md-12 mar-top-30">
