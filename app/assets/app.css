@@ -1,0 +1,93 @@
+.jumbotron{
+  background: url("img/webBackground.png") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.header-content .header-content-inner h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 300px;
+}
+
+h1 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.bioheader{
+  font-size: 36px;
+  text-align: center;
+}
+
+.biotext{
+  font-size: 24px;
+}
+
+.emailtext{
+  font-size: 24px;
+  text-align: center;
+}
+
+.background-1 {
+    background-color: #4b4b4b;
+    color: #fff;
+}
+.background-2 {
+    background-color: #fff;
+    color: #4b4b4b;
+}
+.background-3 {
+    background-color: #373737;
+    color: #fff;
+}
+
+.logo {
+  height: 250px;
+  width: 250px;
+  object-fit: scale-down;
+}
+
+.gitlogo{
+  height: 50px;
+  width: 50px;
+  object-fit: scale-down;
+}
+
+.profilepic{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.downarrow{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+ul.a {
+    list-style-type: circle;
+}
+
+.mar-top--30{margin-top: -30px;}
+.mar-top-5{margin-top: 5px;}
+.mar-bot-5{margin-bottom: -bot: 5px;}
+.mar-top-10{margin-top: 10px;}
+.mar-bot-10{margin-bottom: 10px;}
+.mar-top-20{margin-top: 20px;}
+.mar-bot-20{margin-bottom: 20px;}
+.mar-top-30{margin-top: 30px;}
+.mar-bot-30{margin-bottom: 30px;}
+.mar-top-40{margin-top: 40px;}
+.mar-bot-40{margin-bottom: 40px;}
+.mar-top-50{margin-top: 50px;}
+.mar-bot-50{margin-bottom: 50px;}

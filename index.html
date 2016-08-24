@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ben Zug</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app/assets/app.css">
+	  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  </head>
+  <body  ng-controller="indexController">
+    <div ui-view></div>
+
+  <div clas="col-md-12">
+    <div class="jumbotron">
+      <div class="header-content">
+        <div class="header-content-inner">
+          <a ng-click="gotoAnchor()"><img class="downarrow" src="app/assets/img/downArrow.png"/></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section class="background-1 mar-top--30">
+      <div id="anchor" class="anchor container">
+        <div class="col-md-12 mar-top-20 mar-bot-50">
+          <div class="bioheader mar-top-10 mar-bot-20">BIO</div>
+          <div class="biotext mar-bot-10">{{bio}}</div>
+        </div>
+      </div>
+    </section>
+    <section class="background-2 mar-top-50 mar-bot-50">
+      <div class="container">
+        <div class="col-lg-4" ng-click="showPenna()">
+          <center><img class="logo" src="{{experience[0].image}}"/></center>
+        </div>
+        <div class="col-lg-4" ng-click="showBNY()">
+          <center><img class="logo" src="{{experience[1].image}}"/></center>
+        </div>
+        <div class="col-lg-4" ng-click="showPSU()">
+          <center><img class="logo" src="{{experience[2].image}}"/></center>
+        </div>
+      </div>
+    </section>
+    <section class="background-2 mar-top-50 mar-bot-50">
+      <div class="container" ng-show="isClickedPenna">
+        <div class="year">2015</div>
+        <div class="exptitle">IT Intern</div>
+        <ul class="a">
+          <li>Used Javascript to modify ticketing system</li>
+          <li>Traveled and installed computers and software for 500 employees</li>
+        </ul>
+        <div class="year">2014</div>
+        <div class="exptitle">Maintenance Worker</div>
+        <ul class="a">
+          <li>Landscaping for Mount Gretna Maintenance Shed</li>
+          <li>Inventory for Mount Gretna Maintenance Shed</li>
+        </ul>
+      </div>
+      <div class="container" ng-show="isClickedBNY">
+        <div class="year">2016</div>
+        <div class="exptitle">Summer Associate Program</div>
+        <ul class="a">
+          <li>Client Technology Services Intern</li>
+          <li>Web Application Development</li>
+          <ul class="a">
+            <li>Front-End</li>
+            <ul class="a">
+              <li>AngularJS</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <li>Back-End</li>
+            <ul class="a">
+              <li>Spring</li>
+              <li>SQL</li>
+            </ul>
+          </ul>
+          <li>Innovation Center Sound Map</li>
+          <ul class="a">
+            <li>Raspberry PI</li>
+            <li>Arduino</li>
+            <li>Python</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="container" ng-show="isClickedPSU">
+        <div class="year">2014-2018</div>
+        <div class="exptitle">Student</div>
+        <ul class="a">
+          <li>Courses</li>
+          <ul class="a">
+            <li>CMPSC</li>
+            <ul class="a">
+              <li>121</li>
+              <li>122</li>
+              <li>211</li>
+              <li>360</li>
+              <li>311</li>
+              <li>465</li>
+            </ul>
+            <li>COMPENG</li>
+            <ul class="a">
+              <li>270</li>
+              <li>331</li>
+            </ul>
+          </ul>
+          <li>Clubs</li>
+          <ul class="a">
+            <li>ACM - Association for Computing Machinery</li>
+            <li>AAD - Association for Application Development</li>
+          </ul>
+          <li>Events</li>
+          <ul class="a">
+            <li>Hack PSU</li>
+            <li>Code PSU</li>
+          </ul>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="background-3">
+      <div class="container">
+        <div class="col-md-12 mar-top-30">
+          <center><img class="profilepic" src="app/assets/img/BenZug.png"/></center>
+        </div>
+        <div class="col-md-12 bioheader mar-top-20">
+          Ben Zug
+        </div>
+        <div class="col-md-12 mar-top-10 emailtext">
+          zugben@gmail.com
+        </div>
+      <div>
+      <div class="container">
+        <div class="col-md-5"></div>
+        <div class="col-md-1 mar-top-10 mar-bot-10">
+          <a target="_blank" href="https://github.com/ZenBug13"><img class="gitlogo" src="app/assets/img/GitHub-Mark-Light.png"/></a>
+        </div>
+        <div class="col-md-1 mar-top-10 mar-bot-10">
+          <a target="_blank" href="https://www.linkedin.com/in/benjamin-zug-a29500126"><img class="gitlogo" src="app/assets/img/In-White.png"/></a>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="app/assets/app.js"></script>
+    <script src="app/components/home.controller.js"></script>
+  </body>
+</html>
