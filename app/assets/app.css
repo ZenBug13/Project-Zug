@@ -52,11 +52,17 @@ h1 {
   width: 250px;
   object-fit: scale-down;
 }
+.logo img:hover {
+    opacity: .7;
+}
 
 .gitlogo{
   height: 50px;
   width: 50px;
   object-fit: scale-down;
+}
+.gitlogo img:hover {
+    opacity: .7;
 }
 
 .profilepic{
@@ -74,6 +80,10 @@ h1 {
   margin-left: -50px;
   margin-top: -50px;
 }
+.downarrowfade img:hover {
+    opacity: .7;
+}
+
 ul.a {
     list-style-type: circle;
 }

@@ -15,7 +15,7 @@
   <div clas="col-md-12">
     <div class="jumbotron">
       <div class="header-content">
-        <div class="header-content-inner">
+        <div class="header-content-inner downarrowfade">
           <a ng-click="gotoAnchor()"><img class="downarrow" src="app/assets/img/downArrow.png"/></a>
         </div>
       </div>
@@ -48,7 +48,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4" ng-click="showPenna()" ng-show="!isClickedPSU && !isClickedBNY">
+        <div class="col-lg-4 logo" ng-click="showPenna()" ng-show="!isClickedPSU && !isClickedBNY">
           <center><img class="logo" src="{{experience[0].image}}"/></center>
         </div>
         <div class="col-lg-8 biotext" ng-show="isClickedBNY">
@@ -80,7 +80,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4" ng-click="showBNY()" ng-show="!isClickedPSU && !isClickedPenna">
+        <div class="col-lg-4 logo" ng-click="showBNY()" ng-show="!isClickedPSU && !isClickedPenna">
           <center><img class="logo" src="{{experience[1].image}}"/></center>
         </div>
         <div class="col-lg-8 biotext" ng-show="isClickedPSU">
@@ -118,7 +118,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4" ng-click="showPSU()" ng-show="!isClickedPenna && !isClickedBNY">
+        <div class="col-lg-4 logo" ng-click="showPSU()" ng-show="!isClickedPenna && !isClickedBNY">
           <center><img class="logo" src="{{experience[2].image}}"/></center>
         </div>
       </div>
@@ -138,10 +138,10 @@
       <div>
       <div class="container">
         <div class="col-md-5"></div>
-        <div class="col-md-1 mar-top-10 mar-bot-10">
+        <div class="col-md-1 mar-top-10 mar-bot-10 gitlogo">
           <a target="_blank" href="https://github.com/ZenBug13"><img class="gitlogo" src="app/assets/img/GitHub-Mark-Light.png"/></a>
         </div>
-        <div class="col-md-1 mar-top-10 mar-bot-10">
+        <div class="col-md-1 mar-top-10 mar-bot-10 gitlogo">
           <a target="_blank" href="https://www.linkedin.com/in/benjamin-zug-a29500126"><img class="gitlogo" src="app/assets/img/In-White.png"/></a>
         </div>
         <div class="col-md-5"></div>
