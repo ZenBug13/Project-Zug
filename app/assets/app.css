@@ -62,7 +62,7 @@ h1 {
   object-fit: scale-down;
 }
 .gitlogo img:hover {
-    opacity: .7;
+    opacity: .5;
 }
 
 .profilepic{
@@ -88,6 +88,12 @@ ul.a {
     list-style-type: circle;
 }
 
+.year {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .mar-top--30{margin-top: -30px;}
 .mar-top-5{margin-top: 5px;}
 .mar-top-10{margin-top: 10px;}
@@ -102,3 +108,5 @@ ul.a {
 .mar-bot-40{margin-bottom: 40px;}
 .mar-bot-50{margin-bottom: 50px;}
 .mar-left-50{margin-left: 50px;}
+.mar-left-100{margin-left: 100px};
+.mar-right-100{margin-right: 100px};

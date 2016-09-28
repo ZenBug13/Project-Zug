@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="app/assets/app.css">
-	  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
   </head>
   <body  ng-controller="indexController">
     <div ui-view></div>
@@ -33,7 +33,7 @@
     <section class="background-2 mar-top-50 mar-bot-50">
       <div class="container">
         <div class="col-lg-8 biotext" ng-show="isClickedPenna">
-          <div class=" mar-left-50">
+          <div class=" mar-left-100">
             <div class="year">2015</div>
             <div class="exptitle">IT Intern</div>
             <ul class="a">
@@ -52,39 +52,21 @@
           <center><img class="logo" src="{{experience[0].image}}"/></center>
         </div>
         <div class="col-lg-8 biotext" ng-show="isClickedBNY">
-          <div class=" mar-left-50">
+          <div class=" mar-left-100">
             <div class="year">2016</div>
-            <div class="exptitle">Summer Associate Program</div>
-            <ul class="a">
-              <li>Client Technology Services Intern</li>
-              <li>Web Application Development</li>
-              <ul class="a">
-                <li>Front-End</li>
-                <ul class="a">
-                  <li>AngularJS</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                </ul>
-                <li>Back-End</li>
-                <ul class="a">
-                  <li>Spring</li>
-                  <li>SQL</li>
-                </ul>
-              </ul>
-              <li>Innovation Center Sound Map</li>
-              <ul class="a">
-                <li>Raspberry PI</li>
-                <li>Arduino</li>
-                <li>Python</li>
-              </ul>
-            </ul>
+            <p>
+            The summer of 2016 I worked for BNY Mellon in their Summer Associate Program. During my time there I interned in the Client Technology Service department. Over the course of the summer I did front end and back end web application development with my team of three other people.  The technologies that we used on the application were AngularJS, HTML, CSS, Spring and SQL.
+            </p>
+            <p>
+            I was also a part of the Innovation Center Sound Map team. The team consisted of a group of 15 other interns and the goal was to map noise levels throughout the floor. I worked on the hardware side, using a sound sensor, Arduino, and Raspberry Pi. The sound levels were read through the sensor, then through the Arduino, and filtered and packaged as a JSON through the Pi. The JSON was then sent to the back end in order to be used by the front end.
+            </p>
           </div>
         </div>
         <div class="col-lg-4 logo" ng-click="showBNY()" ng-show="!isClickedPSU && !isClickedPenna">
           <center><img class="logo" src="{{experience[1].image}}"/></center>
         </div>
         <div class="col-lg-8 biotext" ng-show="isClickedPSU">
-          <div class=" mar-left-50">
+          <div class=" mar-left-100">
             <div class="year">2014-2018</div>
             <div class="exptitle">Student</div>
             <ul class="a">

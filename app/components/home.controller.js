@@ -16,7 +16,7 @@ angular.module('myApp', [])
     }
   ];
 
-  $scope.bio = "I am originally from Central Pennsylvania where I attended Cedar Crest High School. I currently attend The Pennsylvania State University in State College, PA. I am studying Computer Science and am expected to graduate in May 2018. During high school I was an active member of scouting. I received the rank of Eagle Scout and spent time at Florida Sea Base and Philmont Scout Ranch. The summer after my freshman year of college,I then went on to work for the Pennsylvania Turnpike Commision for 2 years. I recently finished up an Internship with BNY Mellon in Client Technology Services. Click the Images below to learn more about my past experiences.";
+  $scope.bio = "I am originally from Central Pennsylvania where I attended Cedar Crest High School. I currently attend The Pennsylvania State University in State College, PA. I am studying Computer Science and am expected to graduate in May 2018. During high school I was an active member of scouting. I received the rank of Eagle Scout and spent time at Florida Sea Base and Philmont Scout Ranch. The summer after my freshman year of college,I worked for the Pennsylvania Turnpike Commission for two years. I recently finished up an internship with BNY Mellon in Client Technology Services. Click the images below to learn more about my past experiences.";
 
   $scope.isClickedPenna = false;
   $scope.isClickedBNY = false;
